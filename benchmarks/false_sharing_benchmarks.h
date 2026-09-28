@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "benchmark.h"
+#include "../benchmark.h"
 #include <cstdint>
 
 // Standard cache line size on x86/ARM architectures

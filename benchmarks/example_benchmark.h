@@ -1,6 +1,6 @@
 #pragma once
 
-#include "benchmark.h"
+#include "../benchmark.h"
 
 // Example for copying
 class CopyThisBenchmark : public bench::BenchmarkGroup {
@@ -11,6 +11,8 @@ public:
             volatile uint64_t a = 123456789ULL;
             volatile uint64_t b = 987654321ULL;
             uint64_t res = a * b;
+
+            // This is required as this is not used property and compiler can remove this property breaking whole test.
             bench::do_not_optimize(res);
         });
     }

@@ -7,6 +7,11 @@ project(benchmarks)
 set(CMAKE_CXX_STANDARD 23)
 
 add_executable(benchmarks main.cpp benchmark.h
-    example_benchmarks.h
-    false_sharing_benchmarks.h
+    benchmarks/example_benchmark.h
+    benchmarks/example_benchmarks.h
+    benchmarks/pointer_efficiency_benchmark.h
+    benchmarks/likely_unlikely_med_benchmark.h
+        benchmarks/false_sharing_benchmarks.h
+        benchmarks/likely_unlikely_benchmark.h
+        benchmarks/likely_unlikely_adv_benchmark.h
 )

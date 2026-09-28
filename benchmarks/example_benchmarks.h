@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "benchmark.h"
+#include "../benchmark.h"
 #include <vector>
 #include <string>
 #include <cmath>
